@@ -33,23 +33,23 @@ The website follows a **mobile-first approach**:
 * Navigation adapts with a hamburger menu on smaller screens
 
 How to Run the Project Locally
-1. Download or clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/zenvy.git
-   ```
-
-2. Open the project folder:
-   ```bash
-   cd zenvy
-   ```
-3. Open `index.html` in your browser:
-
+1. Click the link and Open the repository:
+ ```
+github link: https://github.com/jhaybiemarimat21-ux/Zenvy?fbclid=IwY2xjawQ-Bz1leHRuA2FlbQIxMABicmlkETFOR0d4VHpMc25tOFUyaEhRc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHoJMMqgto5GEjir53FVGCTBrGWQozUXeAKJ1O_R7-foOia_aSP2Xgy2Oktch_aem_pGKZbrC0GfvjLVGWmEn5Fw
+ ```
+2. Open `index.html` in your browser:
    * Double-click the file
    * OR right-click → Open with browser
+3. Or click the live link:
+    ```
+    live link: https://jhaybiemarimat21-ux.github.io/Zenvy/
+    ```
 
 Project Structure
 ```
-zenvy/
+zenvy
+├──low-fidelity wireframe
+├──high-fidelity wireframe
 ├── index.html
 ├── style.css
 ├── script.js

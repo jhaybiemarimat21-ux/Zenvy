@@ -4,11 +4,55 @@ const nav = document.getElementById("navLinks");
 nav.style.display = nav.style.display === "flex" ? "none" : "flex";
 }
 
-let cart = [];
+let currentProduct = "";
+let currentPrice = 0;
 
-function buyNow(productName) {
-  alert(`Thank you for choosing ${productName}!`);
+function buyNow(productName, price) {
+  currentProduct = productName;
+  currentPrice = price;
+
+  document.getElementById("selected-product").textContent =
+    'Product: ${productName} (₱${price})';
+
+  toggleOrder();
 }
+
+function toggleOrder() {
+  const modal = document.getElementById("order-modal");
+  modal.style.display = modal.style.display === "block" ? "none" : "block";
+}
+
+function placeOrder() {
+  const name = document.getElementById("customer-name").value;
+  const address = document.getElementById("address").value;
+  const email = document.getElementById("customer-email").value;
+  const contact = document.getElementById("contact").value;
+  const size = document.getElementById("size").value;
+
+  if (!name || !address || !email || !contact || !size) {
+    alert("Please fill in all fields!");
+    return;
+  }
+
+  alert(
+`ORDER PLACED!
+Thank you for choosing Zenvy!
+
+Product: ${currentProduct}
+Size: ${size}
+Total: ₱${currentPrice}
+
+It will be delivered to:
+${address}
+
+We will contact you at ${contact} or ${email}.`
+  );
+
+  toggleOrder();
+}
+
+
+let cart = [];
 
 function addToCart(name, price) {
   cart.push({ name, price });
@@ -63,10 +107,6 @@ function checkout() {
     updateCart();
     toggleCart();
   }
-}
-
-function buyNow(productName) {
-  alert(`Thank you for choosing ${productName}!`);
 }
 
 function validateForm() {

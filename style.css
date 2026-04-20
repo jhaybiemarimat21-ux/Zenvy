@@ -159,6 +159,13 @@ text-align: center;
   cursor: pointer;
 }
 
+#order-modal input,
+#order-modal select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+}
+
 .cart-modal button:hover {
   background: #059669;
 }

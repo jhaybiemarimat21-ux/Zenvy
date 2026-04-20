@@ -113,6 +113,27 @@
   <button onclick="toggleCart()">Close</button>
 </div>
 
+<div id="order-modal" class="cart-modal">
+  <h3>Place Your Order</h3>
+
+  <p id="selected-product"></p>
+
+  <select id="size">
+    <option value="">Select Size</option>
+    <option>Small</option>
+    <option>Medium</option>
+    <option>Large</option>
+  </select>
+
+  <input type="text" id="customer-name" placeholder="Full Name">
+  <input type="text" id="address" placeholder="Address">
+  <input type="email" id="customer-email" placeholder="Email">
+  <input type="text" id="contact" placeholder="Contact Number">
+
+  <button onclick="placeOrder()">Place Order</button>
+  <button onclick="toggleOrder()">Cancel</button>
+</div>
+
 <script src="script.js"></script>
 
 </body>

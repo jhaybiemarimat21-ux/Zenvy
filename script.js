@@ -1,7 +1,6 @@
-
 function toggleMenu() {
-const nav = document.getElementById("navLinks");
-nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+  const nav = document.getElementById("navLinks");
+  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
 }
 
 let currentProduct = "";
@@ -94,8 +93,8 @@ function removeFromCart(index) {
 
 function toggleCart() {
   const modal = document.getElementById("cart-modal");
-  modal.style.display = modal.style.display === 'block' ? 'none' : 'block';
-}
+    modal.style.display = modal.style.display === 'block' ? 'none' : 'block';
+  }
 
 function checkout() {
   if (cart.length === 0) {
@@ -113,11 +112,11 @@ function validateForm() {
 let name = document.getElementById("name").value;
 let email = document.getElementById("email").value;
 
-if (name === "" || email === "") {
-alert("Please fill in all required fields");
-return false;
-}
+  if (name === "" || email === "") {
+    alert("Please fill in all required fields");
+    return false;
+  }
 
-alert("Message sent successfully!");
-return true;
+  alert("Message sent successfully!");
+  return true;
 }

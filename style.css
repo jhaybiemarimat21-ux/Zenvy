@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
+}
 
 body {
-font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .card img {
@@ -39,27 +39,27 @@ font-family: Arial, sans-serif;
 }
 
 .navbar {
-display: flex;
-justify-content: space-between;
-padding: 15px;
-background: #111827;
-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #111827;
+  color: white;
 }
 
 .nav-links {
-display: flex;
+  display: flex;
 gap: 20px none;
-list-style: none;
+  list-style: none;
 }
 
 .nav-links li {
-margin-left: 20px;
+  margin-left: 20px;
 }
 
 .nav-links a {
-color: white;
-text-decoration: none;
-font-weight: 500;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .nav-links a:hover {
@@ -67,29 +67,29 @@ font-weight: 500;
 }
 
 .menu-toggle {
-cursor: pointer;
+  cursor: pointer;
 }
 
 .hero {
-text-align: center;
-padding: 60px 20px;
-background: #f3f4f6;
+  text-align: center;
+  padding: 60px 20px;
+  background: #f3f4f6;
 }
 
 .hero button {
-margin-top: 10px;
-padding: 10px 20px;
-background: #10B981;
-color: white;
-border: none;
-cursor: pointer;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #10B981;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .product-grid {
-display: grid;
-grid-template-columns: 1fr;
-gap: 10px;
-padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 20px;
 }
 
 .card .description {
@@ -171,50 +171,50 @@ text-align: center;
 }
 
 .about {
-padding: 20px;
-text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 .features {
-display: flex;
-flex-direction: column;
-text-align: center;
-padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
 }
 
 .contact {
-padding: 20px;
+  padding: 20px;
 }
 
 .contact input,
 .contact textarea {
-width: 100%;
-margin: 10px 0;
-padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
 }
 
 footer {
-text-align: center;
-padding: 20px;
-background: #111827;
-color: white;
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  color: white;
 }
 
 @media (min-width: 768px) {
-.nav-links {
-display: flex;
-}
+  .nav-links {
+    display: flex;
+  }
 
-.menu-toggle {
-display: none;
-}
+  .menu-toggle {
+    display: none;
+  }
 
-.product-grid {
-grid-template-columns: repeat(4, 1fr);
-}
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-.features {
-flex-direction: row;
-justify-content: space-around;
-}
+  .features {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

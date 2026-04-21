@@ -11,21 +11,18 @@
 <header>
   <nav class="navbar">
     <h1 class="logo">ZENVY</h1>
-
     <ul class="nav-links" id="navLinks">
       <li><a href="#">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#products">Shop</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-
     <div class="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
   </nav>
 </header>
 
 <main>
-
 <section class="hero">
   <h2>Elevate Your Lifestyle</h2>
   <p>Discover premium essentials for modern living</p>
@@ -34,46 +31,42 @@
 
 <section id="products" class="products">
   <h2>Featured Products</h2>
-
   <div class="product-grid">
-
     <div class="card">
       <img src="https://as2.ftcdn.net/v2/jpg/04/79/11/23/1000_F_479112366_dku6Ufwd9OVnRB3AZxonMgRzuZYeTTYY.jpg?fbclid=IwY2xjawQ9lfxleHRuA2FlbQIxMABicmlkETFOR0d4VHpMc25tOFUyaEhRc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHpv5lPEPE1FXlDd2R4zNZHjPYBIsOZ-SaKtOlxuaKDcaTqtweaaqvs5CxNMM_aem_vbSYyZ-hcDWjIWX7D7E5pg" alt="Minimalist Shoes">
       <h3>Minimalist Shoes</h3>
-      <p class="price"1999>₱1,999</p>
+      <p class="price">₱1,999</p>
       <p class="description">A sleek, modern shoes that complements any outfit.</p>
-      <button onclick="buyNow('Minimalist Shoes')">Buy Now</button>
+      <button onclick="buyNow('Minimalist Shoes', 1999)">Buy Now</button>
       <button onclick="addToCart('Minimalist Shoes', 1999)">Add to Cart</button>
     </div>
 
     <div class="card">
       <img src="https://www.sub.com.my/cdn/shop/files/FRONT_51e55eb2-8e6f-4cfd-bf60-482c22bad48d.jpg?v=1723282743&width=1946&fbclid=IwY2xjawQ9lBpleHRuA2FlbQIxMABicmlkETFOR0d4VHpMc25tOFUyaEhRc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHpv5lPEPE1FXlDd2R4zNZHjPYBIsOZ-SaKtOlxuaKDcaTqtweaaqvs5CxNMM_aem_vbSYyZ-hcDWjIWX7D7E5pg" alt="Oversized Shirt">
       <h3>Oversized Shirt</h3>
-      <p>₱699</p>
-      <p class="description">
+      <p class="price">₱699</p>
       <p class="description">Relaxed oversized shirt with a clean and effortless look.</p>
-      <button onclick="buyNow('Oversized Shirt')">Buy Now</button>
+     <button onclick="buyNow('Oversized Shirt', 699)">Buy Now</button>
       <button onclick="addToCart('Oversized Shirt', 699)">Add to Cart</button>
     </div>
 
     <div class="card">
       <img src="https://edogoods.com/wp-content/uploads/2024/08/EDO_HOODIE-BLACK-FRONT_LOGO-scaled.jpg?fbclid=IwY2xjawQ9lH5leHRuA2FlbQIxMABicmlkETFOR0d4VHpMc25tOFUyaEhRc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHmBYk2UWK67-hyLUegkoc1NHpSTbcMTa9fhYzkkD-EksVTlT_xY6kfT8950K_aem_9MG_WN_KrrHeL1gUzLbvdg" alt="Classic Hoodie">
       <h3>Classic Hoodie</h3>
-      <p>₱999</p>
+      <p class="price">₱999</p>
       <p class="description">Minimal hoodie with a smooth, modern fit for everyday style.</p>
-      <button onclick="buyNow('Classic Hoodie')">Buy Now</button>
+      <button onclick="buyNow('Classic Hoodie', 999)">Buy Now</button>
       <button onclick="addToCart('Classic Hoodie', 999)">Add to Cart</button>
     </div>
 
     <div class="card">
       <img src="https://www.nameit.com/dw/image/v2/BDTC_PRD/on/demandware.static/-/Sites-pim-catalog/default/dwe3ddf029/pim-static/NI/13245644/13245644_LightGreyMelange_003.jpg?sw=900&sh=1200&strip=false&fbclid=IwY2xjawQ9lKlleHRuA2FlbQIxMABicmlkETFOR0d4VHpMc25tOFUyaEhRc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHn3Mxj4S-ByTN2SLMN1jPFG6BqDwq3utretHlXznn-ZMf30GHUDd0iCruYuO_aem_853IJxtGakbCRyL6KoNN5A" alt="Grey Sweatpants">
       <h3>Grey Sweatpants</h3>
-      <p>₱1,199</p>
+      <p class="price">₱1,199</p>
       <p class="description">Streamlined grey sweatpants built for comfort and style.</p>
-      <button onclick="buyNow('Grey Sweatpants')">Buy Now</button>
+      <button onclick="buyNow('Grey Sweatpants', 1199)">Buy Now</button>
       <button onclick="addToCart('Grey Sweatpants', 1199)">Add to Cart</button>
     </div>
-
   </div>
 </section>
 
@@ -90,6 +83,17 @@
 
 <section id="contact" class="contact">
   <h2>Contact Us</h2>
+  <div class="shipping-address">
+    <h3>Shipping & Returns Address</h3>
+    <address>
+      Zenvy Returns<br>
+       Main Street, Unit 4<br>
+      Los Angeles, California, ZIP<br>
+      United State of America
+    </address>
+    <p>Email: <a href="mailto:returns@zenvy.com">returns@zenvy.com</a></p>
+    <p>Return window: 14 days from delivery</p>
+  </div>
 
   <form onsubmit="return validateForm()">
     <input type="text" id="name" placeholder="Name">
@@ -98,13 +102,18 @@
     <button type="submit">Send</button>
   </form>
 </section>
-
 </main>
 
 <footer>
+  <div class="footer-address">
+    <address>
+      Zenvy Returns &mdash; 123 Your Street, Unit 4, City, State, ZIP, Philippines
+    </address>
+  </div>
   <p>© 2026 Zenvy. All rights reserved.</p>
 </footer>
 
+<!-- Cart Modal -->
 <div id="cart-modal" class="cart-modal">
   <h3>Your Cart</h3>
   <ul id="cart-items"></ul>
@@ -113,28 +122,30 @@
   <button onclick="toggleCart()">Close</button>
 </div>
 
-<div id="order-modal" class="cart-modal">
-  <h3>Place Your Order</h3>
+<!-- Checkout Modal -->
+<div id="checkout-modal" class="checkout-modal">
+  <div class="checkout-content">
+    <h3>Delivery Details</h3>
+    <input type="text" id="checkout-name" placeholder="Full Name">
+    <input type="text" id="checkout-phone" placeholder="Phone Number">
+    <input type="text" id="checkout-street" placeholder="Street / Barangay">
+    <input type="text" id="checkout-city" placeholder="City / Municipality">
+    <input type="text" id="checkout-province" placeholder="Province">
+    <input type="text" id="checkout-zip" placeholder="ZIP Code">
+    <button onclick="confirmOrder()">Confirm Order</button>
+    <button onclick="closeCheckout()">Cancel</button>
+  </div>
+</div>
 
-  <p id="selected-product"></p>
-
-  <select id="size">
-    <option value="">Select Size</option>
-    <option>Small</option>
-    <option>Medium</option>
-    <option>Large</option>
-  </select>
-
-  <input type="text" id="customer-name" placeholder="Full Name">
-  <input type="text" id="address" placeholder="Address">
-  <input type="email" id="customer-email" placeholder="Email">
-  <input type="text" id="contact" placeholder="Contact Number">
-
-  <button onclick="placeOrder()">Place Order</button>
-  <button onclick="toggleOrder()">Cancel</button>
+<!-- Order Confirmation Modal -->
+<div id="order-confirm" class="order-confirm">
+  <div class="confirm-content">
+    <h3>Order Placed! 🎉</h3>
+    <p id="confirm-message"></p>
+    <button onclick="closeConfirm()">Close</button>
+  </div>
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
